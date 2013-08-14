@@ -1,0 +1,131 @@
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable{"aria-labelledby" => "ui-dialog-title-plan-upgrade-dialog", :role => "dialog", :style => "display: block; z-index: 1035; outline: 0px; height: auto; width: 725px; top: 54px; left: 282px;", :tabindex => "-1"}
+  .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix
+    %span#ui-dialog-title-plan-upgrade-dialog.ui-dialog-title Upgrade to WorkFlowy Pro
+    %a.ui-dialog-titlebar-close.ui-corner-all{:href => "#", :role => "button"}
+      %span.ui-icon.ui-icon-closethick close
+  #plan-upgrade-dialog.ui-dialog-content.ui-widget-content{:style => "display: block; width: auto; min-height: 0px; height: 0px;"}
+    #payment-wrapper
+      #payment-succeeded{:style => "display:none;"}
+        %h1
+          You've successfully joined WorkFlowy Pro!
+        %p
+          To activate your subscription, just reload WorkFlowy.
+        .fancyButton.reloadButton
+          Reload WorkFlowy Now
+      #payment-page
+        #payment-header
+          %p#pro-thank-you-paragraph
+            Thanks for joining WorkFlowy Pro! Your purchase keeps WorkFlowy running and lets us make it better.
+        #about-wf-pro
+          %h3 Why should you upgrade?
+          #premium-features-description
+            %ol
+              %li
+                Unlimited Lists
+                %small
+                  Pro users can make as many lists and items as they want. Non-pro users are limited to 500 per month.
+              %li
+                Backup to Dropbox
+                %small
+                  Never worry about losing your WorkFlowy data. Have full backups automatically uploaded to your Dropbox account every day.
+              %li
+                Password Protected Collaboration
+                %small
+                  Pro users can share parts of their WorkFlowy account with specific people, verified by email address and password.
+              %li
+                Offline Editing
+                %small
+                  (Coming soon) Want to use WorkFlowy when you're not online? Go Pro!
+              %li
+                Theme and Fonts
+                %small
+                  Pro users get to change the look and feel of WorkFlowy with a library of themes and fonts. Make your WorkFlowy more personal.
+              %li
+                Premium Support
+                %small
+                  We answer emails from Pro members first.
+        #purchase-info
+          %form#stripe-form{:action => "/plan", :method => "post", :style => ""}
+            %p.globalerror{:style => "display:none;"}
+              %b There was an error processing your card. Please refresh the page and try again.
+              If you are having repeated trouble upgrading your account, please contact
+              %a{:href => "mailto:billing@workflowy.com"} billing@workflowy.com
+            %h3 Your Plan
+            #choose-your-plan
+              #individualPlan.paymentPlan
+                .detailsBox
+                  %input#monthly_5{:name => "plan", :type => "radio", :value => "monthly_5"}/
+                  %label{:for => "monthly_5"} $4.99 per month
+                  %br/
+                  %input#yearly_50{:checked => "", :name => "plan", :type => "radio", :value => "yearly_50"}/
+                  %label{:for => "yearly_50"} $49 per year (~20% off)
+                  %br/
+            %h3 Credit Card Info
+            .payment-form
+              %table
+                %tbody
+                  %tr.form-row
+                    %td
+                      %label We Accept
+                    %td
+                      %img#cards-accepted{:src => "/media/i/cards.png"}/
+                  %tr.form-row
+                    %td
+                      %label.stripeLabel{:for => "name"} Cardholder's name
+                    %td
+                      %input.required.text{:name => "name", :type => "text"}/
+                  %tr.form-row
+                    %td
+                      %label Card Number
+                    %td
+                      %input.card-number.stripe-sensitive.required.text{:autocomplete => "off", :maxlength => "20", :name => "card-number", :type => "text"}/
+                  %tr.form-row
+                    %td
+                      %label Expiration date
+                    %td
+                      .expiry-wrapper
+                        %select.card-expiry-month.stripe-sensitive.required
+                          %option{:value => "1"} 1
+                          %option{:value => "2"} 2
+                          %option{:value => "3"} 3
+                          %option{:value => "4"} 4
+                          %option{:value => "5"} 5
+                          %option{:value => "6"} 6
+                          %option{:value => "7"} 7
+                          %option{:selected => "", :value => "8"} 8
+                          %option{:value => "9"} 9
+                          %option{:value => "10"} 10
+                          %option{:value => "11"} 11
+                          %option{:value => "12"} 12
+                        %span /
+                        %select.card-expiry-year.stripe-sensitive.required{:name => "card-expiry-year"}
+                          %option{:selected => "", :value => "2013"} 2013
+                          %option{:value => "2014"} 2014
+                          %option{:value => "2015"} 2015
+                          %option{:value => "2016"} 2016
+                          %option{:value => "2017"} 2017
+                          %option{:value => "2018"} 2018
+                          %option{:value => "2019"} 2019
+                          %option{:value => "2020"} 2020
+                          %option{:value => "2021"} 2021
+                          %option{:value => "2022"} 2022
+                          %option{:value => "2023"} 2023
+                          %option{:value => "2024"} 2024
+                  %tr.form-row
+                    %td
+                      %label Security code
+                    %td
+                      %input.card-cvc.stripe-sensitive.required{:autocomplete => "off", :maxlength => "4", :name => "card-cvc", :type => "text"}/
+                  %tr.form-row.submit-row
+                    %td
+                      %label
+                        %img.padlock{:src => "/media/i/padlock.png"}/
+                    %td
+                      %button.fancyButton.submit_button{:name => "submit-button", :type => "submit"} Upgrade Account
+            %span.payment-errors
+      %div{:style => "clear:both;"}
+      /
+        The easiest way to indicate that the form requires JavaScript is to show
+        the form with JavaScript (otherwise it will not render). You can add a
+        helpful message in a noscript to indicate that users should enable JS.
+      %noscript <p>JavaScript is required for the registration form.</p>

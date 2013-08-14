@@ -1,0 +1,189 @@
+<!DOCTYPE >
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link href="reset.css" type="text/css" rel="stylesheet">
+	<link href="jqueryui.css" type="text/css" rel="stylesheet">
+	<link href="themedesktopdefault.css" type="text/css" rel="stylesheet">
+	<link href="font.css" type="text/css" rel="stylesheet">
+	<link href="print.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-plan-upgrade-dialog" style="display: block; z-index: 1035; outline: 0px; height: auto; width: 725px; top: 54px; left: 282px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-plan-upgrade-dialog">Upgrade to Thunderpenny Pro</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="plan-upgrade-dialog" class="ui-dialog-content ui-widget-content" style="display: block; width: auto; min-height: 0px; height: 0px;">
+  <div id="payment-wrapper">
+  <div id="payment-succeeded" style="display:none;">
+  
+  <h1>
+    You've successfully joined Thunderpenny Pro! 
+  </h1>
+  <p>
+    To activate your subscription, just reload Thunderpenny.
+  </p>
+  <div class="fancyButton reloadButton">
+    Reload Thunderpenny Now
+  </div>
+  
+</div>
+<div id="payment-page">
+  
+  <div id="payment-header">
+    <p id="pro-thank-you-paragraph">
+      Thanks for joining Thunderpenny Pro! Your purchase keeps Thunderpenny running and lets us make it better.
+    </p>
+  </div>
+  <div id="about-wf-pro">
+    <h3>Why should you upgrade?</h3>
+    <div id="premium-features-description">
+      <ol>
+	<li>
+	  Unlimited Lists
+	  <small>
+	    Pro users can make as many lists and items as they want. Non-pro users are limited to 500 per month.
+	  </small>
+	</li>
+	<li>
+	  Backup to Dropbox
+	  <small>
+	    Never worry about losing your Thunderpenny data. Have full backups automatically uploaded to your Dropbox account every day.
+	  </small>
+	</li>
+	<li>
+	  Password Protected Collaboration 
+	  <small>
+	    Pro users can share parts of their Thunderpenny account with specific people, verified by email address and password.
+	  </small>
+	</li>
+	<li>
+	  Offline Editing 
+	  <small>
+	    (Coming soon) Want to use Thunderpenny when you're not online? Go Pro!
+	  </small>
+	</li>
+	<li>
+	  Theme and Fonts
+	  <small>
+	    Pro users get to change the look and feel of Thunderpenny with a library of themes and fonts. Make your Thunderpenny more personal.
+	  </small>
+	</li>
+	<li>
+	  Premium Support
+	  <small>
+	    We answer emails from Pro members first.
+	  </small>
+	</li>
+
+      </ol>
+    </div>
+    
+  </div>
+  
+  <div id="purchase-info">
+    <form action="/plan" method="post" id="stripe-form" style="">
+      <p class="globalerror" style="display:none;">
+	<b>There was an error processing your card. Please refresh the page and try again.</b> If you are having repeated trouble upgrading your account, please contact <a href="mailto:billing@workflowy.com">billing@workflowy.com</a>
+      </p>
+      
+      <h3>Your Plan</h3>
+      <div id="choose-your-plan">
+	<div id="individualPlan" class="paymentPlan">
+	  <div class="detailsBox">
+	    
+	    <input type="radio" name="plan" value="monthly_5" id="monthly_5"> <label for="monthly_5">$4.99 per month</label> <br>
+	    
+	    <input type="radio" name="plan" value="yearly_50" checked="" id="yearly_50"> <label for="yearly_50">$49 per year (~20% off)</label> <br>
+	    
+	  </div>
+	</div>
+      </div>
+      <h3>Credit Card Info</h3>
+      
+      <div class="payment-form">
+	<table>
+	  <tbody>
+	    
+	    <tr class="form-row">
+	      <td>
+		<label>We Accept</label>
+	      </td>
+	      <td>
+		<img src="https://workflowy.com/media/i/cards.png" id="cards-accepted">
+	      </td>
+	    </tr>
+	    
+	    <tr class="form-row">
+	      <td>
+		<label for="name" class="stripeLabel">Cardholder's name</label>
+	      </td>
+	      <td>
+		<input type="text" name="name" class="required text">
+	      </td>
+	    </tr>
+	    
+	    <tr class="form-row">
+	      <td>
+		<label>Card Number</label>
+	      </td>
+	      <td>
+		<input type="text" maxlength="20" autocomplete="off" class="card-number stripe-sensitive required text" name="card-number">
+	      </td>
+	    </tr>
+	    <tr class="form-row">
+	      <td>
+		<label>Expiration date</label>
+	      </td>
+	      <td>
+		<div class="expiry-wrapper">
+		  <select class="card-expiry-month stripe-sensitive required"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8" selected="">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+		  <span> / </span>
+		  <select class="card-expiry-year stripe-sensitive required" name="card-expiry-year"><option value="2013" selected="">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option></select>
+		</div>
+	      </td>
+	    </tr>
+
+	    <tr class="form-row">
+	      <td>
+		<label>Security code</label>
+	      </td>
+	      <td>
+		<input type="text" maxlength="4" autocomplete="off" class="card-cvc stripe-sensitive required" name="card-cvc">
+	      </td>
+	    </tr>
+
+	    <tr class="form-row submit-row">
+	      <td>
+		<label>
+		  <img src="https://workflowy.com/media/i/padlock.png" class="padlock">
+		</label>
+	      </td>
+	      <td>
+		<button type="submit" name="submit-button" class="fancyButton submit_button">Upgrade Account</button>
+	      </td>
+	    </tr>
+
+	  </tbody>
+	</table>
+      </div>
+      <span class="payment-errors"></span>
+
+    </form>
+  </div>
+</div>
+<div style="clear:both;"></div>
+
+
+        <!-- 
+            The easiest way to indicate that the form requires JavaScript is to show
+            the form with JavaScript (otherwise it will not render). You can add a
+            helpful message in a noscript to indicate that users should enable JS.
+        -->
+        
+        <noscript>&lt;p&gt;JavaScript is required for the registration form.&lt;/p&gt;</noscript>
+
+  </div>
+</div></div>
+
+</body>
+</html>

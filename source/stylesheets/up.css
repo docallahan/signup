@@ -1,0 +1,160 @@
+.box {
+    -webkit-box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #B6B6B6;
+    background: #ffffff;
+    color: #4F4F4F;
+}
+
+.header {
+    margin-bottom: 20px;
+    background: url(images/bg_fallback.png) 0 0 repeat-x;
+    background: -webkit-gradient( linear, left bottom, left top, color-stop(1, rgb(237,237,237)), color-stop(0, rgb(196,196,196)) );
+    background: -moz-linear-gradient( center top, rgb(237,237,237), rgb(196,196,196) );
+    font-size: 14px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    font-weight: bold;
+    padding:10px;
+}
+
+%span.head {
+    margin-left: 10px;
+}
+
+
+#premium-features-description ol .upgrade-button{
+    list-style:none;
+}
+
+#premium-features-description{
+    border:1px solid #ddd;
+    padding:5px 20px 20px;
+    margin-bottom:20px;
+    background:#eef;
+    
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+#premium-features-description ol{
+    list-style:decimal;
+    padding-left:20px;
+}
+
+#premium-features-description li{
+    font-weight:bold;
+    margin-top:10px;
+}
+
+#premium-features-description small{
+    font-weight:normal;
+    display:block;
+    font-size:11px;
+    line-height:13px;
+    margin-top:5px;
+}
+
+#about-wf-pro, #purchase-info{
+    float:left;
+    margin-bottom:20px;
+}
+
+#about-wf-pro{
+    width:300px;
+    margin-right:20px;
+}
+
+#pro-thank-you-paragraph{
+    font-size:20px;
+    line-height:24px;
+    color:#888;
+    padding:20px 30px;
+    text-align:center;
+    border:2px solid #ddd;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+
+
+#ui_top {
+    float: left;
+    margin: .1em 16px .2em 0;
+    font-size: 14px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    color: #4F4F4F;
+    font-weight: bold;
+}
+
+#top_top {
+
+    /* below is from an above div in workflowy */
+
+    padding: 0.7em 1em 0.6em 1em;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #979797;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+
+    background: -webkit-gradient( linear, left bottom, left top, color-stop(1, rgb(237,237,237)), color-stop(0, rgb(196,196,196)) );
+    background: -moz-linear-gradient( center top, rgb(237,237,237), rgb(196,196,196) );
+    display: block;
+}
+
+#purchase-info{
+    width:355px;
+}
+
+#about-wf-pro, #purchase-info{
+    float:left;
+    margin-bottom:20px;
+}
+
+#purchase-info table label{
+    display:block;
+    text-align:right;
+    color:#666;
+    margin-top:5px;
+}
+
+#choose-your-plan{
+    border:1px solid #ddd;
+    margin-bottom:10px;
+    padding:20px;
+
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius: 5px;
+
+}
+
+
+.payment-form{
+    display:inline-block;
+    border:1px solid #ccc;
+    padding:10px;
+
+    background:#f5f5f5;
+    
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 0px 10px #ccc;    
+    -moz-box-shadow: 0px 0px 10px #ccc;   
+    box-shadow: 0px 0px 10px #ccc;
+
+}
+
+.payment-form input[type='text']:focus{
+    border:1px solid #cdf;
+    -webkit-box-shadow: 0px 0px 10px #8af;    
+    -moz-box-shadow: 0px 0px 10px #8af;   
+    box-shadow: 0px 0px 10px #8af;
+}

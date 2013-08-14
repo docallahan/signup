@@ -1,0 +1,45 @@
+element.style {
+display: block;
+z-index: 1035;
+outline: 0px;
+height: auto;
+width: 725px;
+top: 54px;
+left: 282px;
+}
+
+
+.ui-dialog {
+-webkit-box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+/* -moz-box-shadow: 0 2px 12px rgba(0,0,0,0.6); */
+box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
+.ui-dialog {
+/* font-family: ; */
+font-weight: normal;
+}
+
+.ui-dialog {
+position: absolute;
+padding: 0;
+/* width: 300px; */
+overflow: visible;
+}
+
+.ui-corner-all {
+/* -moz-border-radius: 3px; */
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+.ui-widget-content {
+border: 1px solid #B6B6B6;
+background: #ffffff;
+color: #4F4F4F;
+}
+
+.ui-widget {
+font-family: 'Helvetica Neue', Arial, sans-serif !important;
+/* font-size: 1.1em; */
+}

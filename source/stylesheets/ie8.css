@@ -1,0 +1,33 @@
+.editor textarea{
+    margin-top:-1px !important;
+}
+
+.selectedEditor.editor textarea{
+    margin-top:0px !important;
+}
+
+
+.content.editing{
+    color:#fff !important;
+}
+
+.bullet{
+	background:transparent url(/media/i/bullet.png) no-repeat scroll -1px -1px;
+	line-height:18px;
+}
+
+.task .bullet, .project.open > .name > .bullet{
+	background:transparent;
+	line-height:18px;
+}
+
+.bullet:hover{
+	background:transparent url(/media/i/bullet.png) no-repeat scroll -1px -20px !important;
+}
+
+/* Need this to prevent mouseleave events from firing due to
+   transparent background. */
+#savedViewHUD {
+    background-color: transparent;
+    background-image: url(/media/i/transparent.gif);
+}

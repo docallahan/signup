@@ -1,0 +1,137 @@
+
+
+
+body{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*
+#fontChooser .galleryShowButton{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+*/
+
+.selected > .children > .project > .children > .project, .twoLevelsDownEditor.nameEditor{
+    font-size: 15px;
+}
+
+.selected > .children > .project {
+    padding-top: 4px;
+}
+.selected > .children > .project > .children .project {
+    padding-top: 3px;
+}
+
+#helpWindow h1.header{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+.selected.project > .name{
+    font-size: 26px;
+}
+
+.selectedEditor > textarea{
+    font-size: 26px;
+}
+
+.saveButton, .showCompletedButton, #buttonBar, #helpButton {
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#searchBox{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#searchPrompt{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+.addButton > .text{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+.noted > .notes > .content{
+    font-size: 13px;
+}
+
+.noteEditor > textarea{
+    font-size: 13px;
+}
+
+.selected > .notes > .content, .selected > .notes > .content.editing{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.selectedEditor.noteEditor > textarea{
+    font-size: 16px;
+    line-height: 20px !important;
+}
+
+#controlsLeft{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+.name > .content{
+    min-height: 20px;
+}
+
+.selected > .name > .content {
+    min-height: 34px;
+}
+
+.selected .project > .name > .content, .nameEditor > textarea{
+    line-height: 20px;
+}
+
+.selected > .name > .content, .selectedEditor.nameEditor > textarea{
+    line-height: 34px;
+}
+
+#shared_notice{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#game_tooltip{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#ratingDialog{
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#keyboardShortcutHelper {
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+.ui-dialog {
+    font-family: ;
+    font-weight: normal;
+}
+
+#bottomLinks .bottomLink {
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#getMoreSpaceButtonTopLeft {
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#site_message {
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#savedViewHUD {
+    font-family: 'Helvetica Neue', Arial, Sans-serif;
+}
+
+#headerQuotaProgress {
+    font-family: 'Helvetica Neue', Arial, Sans-serif;    
+}
+
