@@ -5,24 +5,24 @@
 		%script{:src => "//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"}
 		%link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css", :rel => "stylesheet"}/
 	%body
-		.row.box.col-lg-6.col-lg-offset-1
+		.row.box.col-lg-7.col-lg-offset-1(style="width:700px")
 			.row.header
 				%span.head
 					%p Upgrade to the Thunderpenny Pro Plan
 			.row#pro-thank-you-paragraph
 				%p Take your tabs to the next level, Go Pro.
 			.row.col-lg-4#about-wf-pro
-				%h3 Features Title
+				%h3 Features
 				.feature_class#premium-features-description
 					%ol
 						%li
 							Unlimited Image Hosting
 							%small
-								Pro customers can host unlimted images.
+								Pro customers can host unlimted images on unlimited pages.
 						%li
 							Drag & Drop Editor
 							%small
-								Build tabs quickly and beautifully, no coding needed.
+								Build tabs quickly and beautifully, no coding needed. Available on one page.
 						%li
 							Contact Us App
 							%small
@@ -30,36 +30,37 @@
 						%li
 							White Label
 							%small
-								Have your own branding! 
+								Have your own branding on all your tabs. 
 						%li
-							Contest & Coupon Apps
+							Coupon App
 							%small
-								(Coming soon) Want to run promotions with Thunderpenny? Go Pro!
+								The coupon promotions app provides incentive for purchasing products now.
 						%li
 							Premium Support
 							%small
 								We answer emails from Pro members first.
-			.row.col-lg-4.col-lg#purchase-info
+			.row#purchase-info(style="width: 348px;")
 				%form#stripe-form{:action => "/plan", :method => "post", :style => ""}
 					%p.globalerror{:style => "display:none;"}
 						%b There was an error processing your card. Please refresh the page and try again.
 						If you are having repeated trouble upgrading your account, please contact
-						%a{:href => "mailto:billing@workflowy.com"} billing@workflowy.com
+						%a{:href => "mailto:team@thunderpenny.com"} team@thunderpenny.com
 					%h3 Your Plan
 					#choose-your-plan
 						#individualPlan.paymentPlan
 							.detailsBox
 								%input#monthly_5{:name => "plan", :type => "radio", :value => "monthly_5"}/
-								%label{:for => "monthly_5"} $14.99 per month
+								%label{:for => "monthly_5"} $15 per month
 								%br/
-								%input#yearly_50{:checked => "", :name => "plan", :type => "radio", :value => "yearly_50"}/
-								%label{:for => "yearly_50"} $149 per year (~20% off)
-								%br/
+								-#
+									%input#yearly_50{:checked => "", :name => "plan", :type => "radio", :value => "yearly_50"}/
+									%label{:for => "yearly_50"} $149 per year (~20% off)
+									%br/
 					%h3 Credit Card Info
 					.payment-form
 						%table
 							%tbody
-								%tr.form-row
+								%tr.form-row(style="font-size:13px; font-weight: normal; height: 12.727272033691406px;")
 									%td
 										%label We Accept
 									%td
@@ -69,6 +70,11 @@
 										%label.stripeLabel{:for => "name"} Cardholder's name
 									%td
 										%input.required.text{:name => "name", :type => "text"}/
+								%tr.form-row
+									%td
+										%label.stripeLabel{:for => "address"} First line of Address								
+									%td
+										%input.required.text{:name => "address", :type => "text"}/
 								%tr.form-row
 									%td
 										%label Card Number
@@ -114,7 +120,8 @@
 								%tr.form-row.submit-row
 									%td
 										%label
-											%img.padlock{:src => "https://workflowy.com/media/i/padlock.png"}/
+											%a(href="https://stripe.com/gallery" target="_blank")
+												%img.padlock{:title=>"secure payment processing by stripe", :src => "images/media/padlock.png"}/
 									%td
 										%button.fancyButton.submit_button{:name => "submit-button", :type => "submit"} Upgrade Account
 					%span.payment-errors

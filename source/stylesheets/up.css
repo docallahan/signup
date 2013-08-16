@@ -54,7 +54,7 @@
 #premium-features-description small{
     font-weight:normal;
     display:block;
-    font-size:11px;
+    /* I decree thee too small font-size:11px; */
     line-height:13px;
     margin-top:5px;
 }
@@ -121,6 +121,11 @@
     text-align:right;
     color:#666;
     margin-top:5px;
+    /* below is shit I added for label */
+    width:119px;
+    font-size: 13px;
+    font-weight: 400;
+    padding-right: 4px;
 }
 
 #choose-your-plan{
